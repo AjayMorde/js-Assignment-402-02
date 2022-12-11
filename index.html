@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        text-align: center;
+        margin-top: 70px;
+       }
+       .heading{
+        font-size: 70px;
+        color: green;
+
+       }
+    
+     
+
+    </style>
+</head>
+<body>
+
+    <h1 class="heading">Geekster</h1>
+    <p>
+        <h1> Click on the button to add image element</h1>
+       
+    </p><br>
+    <button id="btn" onclick="add()">Click here</button>
+    <center><div class="d">
+        <div id="textarea" ></div>
+        <div id="text"></div>
+    </div></center>
+    <script type="text/javascript">
+         let a=document.getElementById("heading");
+         let btn=document.getElementById("btn");
+         let flag =0;
+         
+            function add(){
+                if(flag==1) exit;
+                const newElm=document.createElement("h1")
+                const a=document.createElement("h1")
+                newElm.style.color="green";
+                newElm.append("Image Element Added ")
+                a.style.fontSize="70px"
+                a.style.color="green"
+                document.getElementById("textarea").append(newElm);
+                a.append("Geekster")
+                document.getElementById("text").append(a); 
+                   flag++;
+
+            }    
+
+    </script>
+    
+</body>
+</html>
